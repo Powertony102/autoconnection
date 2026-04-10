@@ -1,0 +1,35 @@
+{
+  "studentInfo": {
+    "name": "你的名字",
+    "university": "当前学校",
+    "major": "计算机科学",
+    "year": "大四",
+    "researchInterests": [
+      "3D Computer Vision",
+      "Neural Rendering",
+      "3D Gaussian Splatting",
+      "3D Reconstruction"
+    ],
+    "researchExperience": [
+      {
+        "title": "项目1名称",
+        "description": "项目描述，突出技术贡献",
+        "skills": ["PyTorch", "CUDA", "3DGS"]
+      }
+    ],
+    "publications": [
+      "论文1信息",
+      "论文2信息"
+    ],
+    "targetSemester": "Fall 2026",
+    "degree": "PhD"
+  },
+  "resume": {
+    "pdfPath": "./docs/CV.pdf"
+  },
+  "outreach": {
+    "outputDir": "./outreach",
+    "wechatNotification": true,
+    "autoSend": false
+  }
+}
