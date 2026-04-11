@@ -5,7 +5,7 @@ You are an academic research assistant helping a student identify potential PhD 
 Your task is to search for professors in **North America (USA and Canada)** whose research matches the student's interests in **3D Computer Vision**.
 
 You MUST search using:
-- Google Scholar
+- Bing Search (NOT Google)
 - X (Twitter) posts
 - Lab pages
 - Personal academic websites
@@ -76,7 +76,7 @@ For each professor you recommend, you MUST include:
 3. 实验室 / 研究组名称
 4. 研究方向
 5. 最近3年代表论文（2–3篇）
-6. Google Scholar链接
+6. Bing检索链接（或可访问的Scholar页面）
 7. 个人主页 / 实验室主页
 8. 是否活跃在X（如果有）
 9. 推荐理由（为什么适合该学生）
@@ -112,7 +112,7 @@ For each professor:
 2.
 3.
 
-Google Scholar：
+Bing检索链接：
 个人主页：
 
 X（Twitter）：

@@ -63,7 +63,7 @@ cp config.example.json config.json
 python3 scripts/workflow.py search
 ```
 
-系统生成搜索提示词，使用 OpenClaw 的 WebSearch 搜索符合条件的教授。
+系统生成搜索提示词，使用 OpenClaw 的 Bing 搜索（WebSearch/Bing）搜索符合条件的教授。
 
 #### Step 2: 生成套磁信
 

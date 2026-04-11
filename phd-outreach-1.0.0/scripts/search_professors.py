@@ -45,8 +45,8 @@ TOP_CONFERENCES = ["CVPR", "ICCV", "ECCV", "SIGGRAPH", "NeurIPS", "ICML", "ICLR"
 
 def search_professors_websearch(query: str, num_results: int = 10) -> List[Dict[str, Any]]:
     """
-    使用 WebSearch 搜索教授信息
-    注意：此函数需要在 OpenClaw 环境中运行，使用系统的 WebSearch 能力
+    使用 Bing 搜索教授信息
+    注意：此函数需要在 OpenClaw 环境中运行，使用系统的 Bing 搜索能力
     """
     # 这是一个模板函数，实际执行时由 OpenClaw 注入搜索能力
     # 返回格式化的搜索结果
@@ -61,6 +61,7 @@ def parse_professor_info(raw_data: Dict[str, Any]) -> Dict[str, Any]:
         "lab": raw_data.get("lab", ""),
         "research_area": raw_data.get("research_area", ""),
         "recent_papers": raw_data.get("recent_papers", []),
+        "scholar_link": raw_data.get("scholar_link", raw_data.get("google_scholar", "")),
         "google_scholar": raw_data.get("google_scholar", ""),
         "homepage": raw_data.get("homepage", ""),
         "twitter": raw_data.get("twitter", ""),
@@ -75,7 +76,7 @@ def generate_search_prompt() -> str:
 Your task is to search for professors in **North America (USA and Canada)** whose research matches the student's interests in **3D Computer Vision**.
 
 You MUST search using:
-- Google Scholar
+- Bing Search (NOT Google)
 - X (Twitter) posts
 - Lab pages
 - Personal academic websites
@@ -146,7 +147,7 @@ For each professor you recommend, you MUST include:
 3. 实验室 / 研究组名称
 4. 研究方向
 5. 最近3年代表论文（2–3篇）
-6. Google Scholar链接
+6. Bing检索链接（或可访问的Scholar页面）
 7. 个人主页 / 实验室主页
 8. 是否活跃在X（如果有）
 9. 推荐理由（为什么适合该学生）
@@ -182,7 +183,7 @@ For each professor:
 2.
 3.
 
-Google Scholar：
+Bing检索链接：
 个人主页：
 
 X（Twitter）：
@@ -236,7 +237,7 @@ def main():
     print("\n" + "=" * 60)
     print("使用说明:")
     print("1. 复制上面的提示词")
-    print("2. 在 OpenClaw 中使用 WebSearch 功能搜索")
+    print("2. 在 OpenClaw 中使用 Bing 搜索（WebSearch/Bing）")
     print("3. 将搜索结果保存到 outreach/professors/ 目录")
 
 

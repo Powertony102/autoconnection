@@ -164,7 +164,7 @@ outreach/
 ```
 用户：帮我搜索做 Gaussian Splatting 的教授
 OpenClaw：正在生成搜索提示词...
-       [生成提示词用于WebSearch]
+       [生成提示词用于 Bing 搜索（WebSearch/Bing）]
 
 用户：为 University of Toronto 的 John Smith 写套磁信
 OpenClaw：已生成写作提示词，包含：

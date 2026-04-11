@@ -132,7 +132,7 @@ python3 send_outreach.py
 
 系统会生成搜索提示词，你需要：
 1. 复制提示词
-2. 使用 WebSearch 功能搜索
+2. 使用 Bing 搜索（WebSearch/Bing）功能搜索
 3. 整理搜索结果到 `outreach/professors/`
 
 ### Step 2: 生成套磁信

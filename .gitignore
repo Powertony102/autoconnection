@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Local config and personal data
+config.json
+config.txt
+phd-outreach-1.0.0/config.json
+xinzeli_cv_en.pdf
+
+# Generated outputs
+dist/
+outreach/
+phd-outreach-1.0.0/scripts/__pycache__/
+__pycache__/
+
+# Claude local settings
+.claude/settings.local.json
